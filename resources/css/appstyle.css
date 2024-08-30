@@ -1,0 +1,260 @@
+body {
+    background: linear-gradient(-10deg, #61389c, #000000, #000000, #000000);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.title-page {
+    color: white;
+}
+
+.navbar-style {
+    background-color: #61389c;
+}
+
+.navbar-togglebtn {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    border-width: 2px;
+}
+
+.navbar-collapse {
+    display: flex;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.navbar-style .navbar-brand,
+.navbar-style .nav-link {
+    color: white;
+}
+
+.navbar-style .nav-link.active {
+    color: white;
+}
+
+.navbar-style .nav-link.active:hover {
+    color: rgb(153, 153, 153);
+}
+
+.card-style {
+    background-color: transparent;
+    border-color: #62389c5d;
+    border-width: 3px;
+    border-radius: 20px;
+}
+
+.card-style-form {
+    width: 50%;
+}
+
+.d-flex-inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.d-flex-inputs2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+@media (max-width: 770px) {
+    .card-style-form {
+        width: 100%;
+    }
+
+    .d-flex-inputs {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .d-flex-inputs2 {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .d-flex-inputs2 button {
+        margin-bottom: 10px;
+    }
+
+    .table-dark.table-rounded thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    .table-dark.table-rounded tr {
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    .table-dark.table-rounded td {
+        display: block;
+        font-size: .8em;
+        text-align: end !important;
+    }
+
+    .table-dark.table-rounded td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .navbar-collapse {
+        display: none;
+    }
+
+    .navbar-togglebtn {
+        display: block;
+    }
+}
+
+.text-color-page {
+    color: white !important;
+}
+
+.dark-input {
+    background-color: #343a40;
+    color: white;
+    border: none;
+    caret-color: white;
+}
+
+.dark-input::placeholder {
+    color: white;
+    opacity: 0.4;
+}
+
+.dark-input:focus {
+    background-color: #343a40;
+    color: white;
+    box-shadow: none;
+    outline: none;
+}
+
+.dark-input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='white' class='bi bi-x' viewBox='0 0 16 16'%3E%3Cpath d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") no-repeat center;
+    cursor: pointer;
+}
+
+.addtask-btn {
+    border-radius: 13px;
+    border-width: 2px;
+}
+
+.actions-btn {
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+.table-dark.table-rounded {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table-dark.table-rounded th,
+.table-dark.table-rounded td {
+    text-align: center;
+}
+
+.table-dark.table-rounded th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.table-dark.table-rounded td {
+    align-content: center;
+    font-size: .80em;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    opacity: 0.4;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 1;
+}
+
+input[type="date"] {
+    color: white;
+}
+
+input[type="date"]::-moz-focus-inner {
+    border: 0;
+}
+
+/* Estilo dos botões de paginação */
+.pagination .page-item {
+    margin: 2px;
+}
+
+.pagination .page-link {
+    border-radius: 0px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    padding: 2px;
+    border: 2px solid #8400ff;
+    background-color: transparent;
+    color: #8400ff;
+}
+
+.pagination .page-link:hover {
+    background-color: #8400ff;
+    color: white;
+}
+
+.pagination .page-item.disabled .page-link {
+    background-color: transparent;
+    color: #8400ff;
+}
+
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
